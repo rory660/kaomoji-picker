@@ -51,5 +51,5 @@ CHOICE=$(echo "$KAOMOJIS" | gum choose --header "Pick a kaomoji:")
 [ -z "$CHOICE" ] && exit 0
 
 # Copy to clipboard and confirm
-echo "$CHOICE" | pbcopy
+echo -n "$CHOICE" | pbcopy
 echo "Copied to clipboard: $CHOICE"
