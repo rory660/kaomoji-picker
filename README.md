@@ -1,8 +1,8 @@
-# kaomoji-picker
+# kaomoji-picker (◕‿◕)
 
-A lightweight command-line tool for quickly selecting and copying kaomoji to your clipboard, organized by mood.
+A lightweight command-line tool for quickly selecting and copying kaomoji to your clipboard, organized by mood. ٩(◕‿◕｡)۶
 
-## Features
+## Features (＾▽＾)
 
 - 100 kaomojis organized by mood
 - Two-stage selection: pick a mood, then pick a kaomoji
@@ -10,20 +10,20 @@ A lightweight command-line tool for quickly selecting and copying kaomoji to you
 - Instant clipboard copying
 - Fetches kaomoji data from remote source (or local with `-l` flag)
 
-## Prerequisites
+## Prerequisites (´･ω･`)?
 
 - [gum](https://github.com/charmbracelet/gum) - Terminal UI toolkit
 - [jq](https://jqlang.github.io/jq/) - JSON processor
 - curl
 - macOS (uses `pbcopy` for clipboard)
 
-### Installing dependencies (macOS)
+### Installing dependencies (macOS) (∩^o^)⊃━☆
 
 ```bash
 brew install gum jq curl
 ```
 
-## Usage
+## Usage ᕕ( ᐛ )ᕗ
 
 ```bash
 ./kaomoji.sh           # fetch from GitHub
@@ -66,7 +66,7 @@ Pick a kaomoji:
 
 The selected kaomoji is copied to your clipboard.
 
-## Available Moods
+## Available Moods (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
 
 | Mood | Count | Examples |
 |------|-------|----------|
@@ -81,7 +81,7 @@ The selected kaomoji is copied to your clipboard.
 | excited | 10 | `\(★ω★)/` `٩(◕‿◕｡)۶` `(∩^o^)⊃━☆` |
 | neutral | 10 | `(´･ω･`)` `(￣ω￣)` `(-_-) zzZ` |
 
-## Adding Kaomojis
+## Adding Kaomojis (⌐■_■)
 
 Edit `kaomojis.json` to add more entries:
 
