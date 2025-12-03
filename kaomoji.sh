@@ -4,15 +4,10 @@
 # Requires: gum (https://github.com/charmbracelet/gum), jq, curl
 
 # Fetch kaomojis from a GitHub gist or API
-KAOMOJI_URL=""
+KAOMOJI_URL="https://raw.githubusercontent.com/rory660/kaomoji-picker/refs/heads/main/kaomojis.json"
 
 # Fetch and parse the kaomojis
 KAOMOJIS=$(curl -s "$KAOMOJI_URL" | jq -r '.[]' 2>/dev/null)
-
-# Fallback to local list if fetch fails
-if [ -z "$KAOMOJIS" ]; then
-  KAOMOJIS="¯\"
-fi
 
 CHOICE=$(echo "$KAOMOJIS" | gum choose)
 
